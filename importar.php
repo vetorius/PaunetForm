@@ -55,10 +55,30 @@ $elalumno = new alumno('');
 
     <div class="container">
     <?php
-        if (file_exists('alumnos.csv')) {
-            $elalumno->importFile('alumnos.csv'); 
+
+        if(isset($_FILES['alumnos'])){
+            $file_tmp =$_FILES['alumnos']['tmp_name'];
+            move_uploaded_file($file_tmp, 'alumnos.csv');
+            if (file_exists('alumnos.csv')) {
+                $elalumno->importFile('alumnos.csv');
+                unlink('alumnos.csv');
+            } else {
+                echo '<h1>fichero no encontrado</h1>';
+            }
         } else {
-            echo '<h1>fichero no encontrado</h1>';
+    ?>
+        <form class="form-horizontal" action="" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="InputFile">Archivo a importar</label>
+                <input type="file" id="InputFile" name="alumnos">
+                <p class="help-block">Archivo csv con los datos de los alumnos.</p>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Importar</button>
+            </div>
+
+        </form>
+    <?php 
         }
     ?>
     </div><!-- /.container -->
