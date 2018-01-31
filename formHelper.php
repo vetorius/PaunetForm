@@ -140,8 +140,8 @@ function selectPais($etiqueta, $variable, $valor) {
         }
         $html .= '>España</option>';
    // pais
-        $html .= '<option value="R" ';
-        if ($valor=='R') {
+        $html .= '<option value="RO" ';
+        if ($valor=='RO') {
             $html .= 'selected';
         }
         $html .= '>Rumanía</option>';
@@ -175,7 +175,13 @@ function selectPais($etiqueta, $variable, $valor) {
             $html .= 'selected';
         }
         $html .= '>Ecuador</option>';
-        
+   // pais
+        $html .= '<option value="MEX" ';
+        if ($valor=='MEX') {
+            $html .= 'selected';
+        }
+        $html .= '>México</option>';
+
     $html .= '</select></div>';
 
     return $html;    
@@ -211,6 +217,12 @@ function selectNacionalidad($etiqueta, $variable, $valor) {
             $html .= 'selected';
         }
         $html .= '>Nicaragüense</option>';
+    // pais
+        $html .= '<option value="RO" ';
+        if ($valor=='RO') {
+            $html .= 'selected';
+        }
+        $html .= '>Rumana</option>';
     $html .= '</select></div>';
 
     return $html;    
