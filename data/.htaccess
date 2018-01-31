@@ -1,0 +1,4 @@
+# impide que los datos se puedan mostrar en el navegador
+
+Order deny, allow
+Deny from all
