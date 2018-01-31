@@ -93,6 +93,12 @@ function selectAsignatura($etiqueta, $variable, $valor) {
         $html .= 'selected';
     }
     $html .= '>Dibujo Técnico II</option>';
+// asignatura
+    $html .= '<option value="FR" ';
+    if ($valor=='19') {
+        $html .= 'selected';
+    }
+    $html .= '>Francés</option>';
 
     $html .= '</select>';
 
@@ -245,13 +251,13 @@ function selectIdioma($etiqueta, $variable, $valor) {
         if ($valor=='FR') {
             $html .= 'selected';
         }
-        $html .= '>Francés</option>';
+        $html .= ' disabled>Francés</option>';
     // idioma
         $html .= '<option value="AL" ';
         if ($valor=='AL') {
             $html .= 'selected';
         }
-        $html .= '>Alemán</option>';
+        $html .= ' disabled>Alemán</option>';
     $html .= '</select></div>';
 
     return $html;    
