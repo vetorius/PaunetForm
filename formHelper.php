@@ -146,8 +146,8 @@ function selectPais($etiqueta, $variable, $valor) {
         }
         $html .= '>España</option>';
    // pais
-        $html .= '<option value="RO" ';
-        if ($valor=='RO') {
+        $html .= '<option value="R" ';
+        if ($valor=='R') {
             $html .= 'selected';
         }
         $html .= '>Rumanía</option>';
@@ -187,7 +187,13 @@ function selectPais($etiqueta, $variable, $valor) {
             $html .= 'selected';
         }
         $html .= '>México</option>';
-
+   // pais
+        $html .= '<option value="RPC" ';
+        if ($valor=='RPC') {
+            $html .= 'selected';
+        }
+        $html .= '>China</option>';
+        
     $html .= '</select></div>';
 
     return $html;    
