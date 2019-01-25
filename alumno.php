@@ -73,7 +73,9 @@ class alumno
 		// $this->centro = $datos[0];
 		// $this->tipo = $datos[1];
 		// $this->curso = $datos[2];
-		$this->dni = $datos[3];
+		if ($datos[3] != "") {
+			$this->dni = $datos[3];
+		}
 		$this->nom = $datos[4];
 		$this->ap1 = $datos[5];
 		$this->ap2 = $datos[6];
