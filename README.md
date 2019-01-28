@@ -5,5 +5,4 @@ Para agilizar el traspaso de los datos de la aplicación de gestión académica 
 
 ## Temas pendientes
 * Documentación más detallada.
-* Introducir lista completa de paises y nacionalidades.
 * Posibilidad de ajustar materias disponibles que no esté en el código.

@@ -33,6 +33,26 @@
 
 	}
 
+	// cargar los datos de los códigos de paises y nacionalidades
+	$intCodes = 'codigos/codpais.csv';
+
+	$codigos = array();
+	if (($fichero = fopen($intCodes, "r")) !== FALSE) {
+	    // Lee los nombres de los campos
+	    $nombres_campos = fgetcsv($fichero, 0, ";");
+	    $num_campos = count($nombres_campos);
+	    // Lee los registros
+	    while (($datos = fgetcsv($fichero, 0, ";")) !== FALSE) {
+	        // Crea un array asociativo con los nombres y valores de los campos
+	        for ($icampo = 0; $icampo < $num_campos; $icampo++) {
+	            $registro[$nombres_campos[$icampo]] = $datos[$icampo];
+	        }
+	        // Añade el registro leido al array de registros
+	        $codigos[] = $registro;
+	    }
+	    fclose($fichero);
+	}
+
  ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -148,7 +168,7 @@
 
 				<div class="form-group col-xs-4">
 					<!-- pais de nacimiento -->
-					<?php echo selectPais('País de nacimiento', 'pais' , $elalumno->pais); ?>
+					<?php echo selectPais('País de nacimiento', 'pais' , $elalumno->pais, $codigos); ?>
 				</div>
 
 				<div class="form-group col-xs-4">
@@ -159,7 +179,7 @@
 
 				<div class="form-group col-xs-4">
 					<!-- pais de nacionalidad -->
-					<?php echo selectNacionalidad('Nacionalidad', 'nac' , $elalumno->nac); ?>
+					<?php echo selectNacionalidad('Nacionalidad', 'nac' , $elalumno->nac, $codigos); ?>
 
 				</div>
 

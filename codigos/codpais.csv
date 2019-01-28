@@ -1,0 +1,190 @@
+code;pais;nacionalidad
+AF;AFGANISTAN;Afgana
+AL;ALBANIA;Albanesa
+D;ALEMANIA;Alemana
+AND;ANDORRA;Andorrana
+AO;ANGOLA;Angoleña
+NA;ANTILLAS HOLANDESAS;Antillana
+ASA;ARABIA SAUDITA;Saudí
+DZ;ARGELIA;Argelina
+RA;ARGENTINA;Argentina
+AR;ARMENIA;Armenia
+AUS;AUSTRALIA;Australiana
+A;AUSTRIA;Austriaca
+AZ;AZERBAIYAN;Azerbayana
+BS;BAHAMAS;Bahameña
+BRN;BAHREIN;Bahreiní
+BD;BANGLADESH;Bengalí
+BDS;BARBADOS;Barbadiense
+B;BELGICA;Belga
+BH;BELICE;Belicense
+DY;BENIN;Beninense
+BHU;BHUTAN;Bhutanesa
+BIE;BIELORRUSIA;Bielorrusa
+BO;BOLIVIA;Boliviana
+BOH;BOSNIA-HERZEGOVINA;Bosnia-Herzegovina
+RB;BOTSWANA;Botsuanesa
+BR;BRASIL;Brasileña
+BRU;BRUNEI;Bruneyense
+BG;BULGARIA;Búlgara
+HV;BURKINA FASO (ALTO VOLTA);Burkinabesa
+RU;BURUNDI;Burundesa
+CV;CABO VERDE;Caboverdiana
+K;CAMBOYA (KAMPUCHEA);Camboyana
+CA;CAMERUN;Camerunesa
+CDN;CANADA;Canadiense
+TD;CHAD;Chadí
+RCH;CHILE;Chilena
+RPC;CHINA;China
+CY;CHIPRE;Chipriota
+CO;COLOMBIA;Colombiana
+CAM;COMORAS, GRAN COMORE, ANJOUAN Y MCHE;Comorense
+RCB;CONGO;Congoleña
+ROK;COREA DEL NORTE;Norcoreana
+COR;COREA DEL SUR;Surcoreana
+CI;COSTA DE MARFIL;Marfileña
+CR;COSTA RICA;Costarricense
+CRO;CROACIA;Croata
+C;CUBA;Cubana
+DK;DINAMARCA;Danesa
+DJ;DJIBUTI;Yibutiense
+WD;DOMINICA;Dominiquesa
+EC;ECUADOR E ISLAS GALAPAGOS;Ecuatoriana
+ET;EGIPTO;Egipcia
+SA;EL SALVADOR;Salvadoreña
+EA;EMIRATOS ARABES UNIDOS;Emiratí
+ERT;ERITREA;Eritrea
+ESQ;ESLOVAQUIA;Eslovaca
+ESL;ESLOVENIA;Eslovena
+E;ESPAÑA;Española
+USA;ESTADOS UNIDOS DE AMERICA;Estadounidense
+ES;ESTONIA;Estonia
+EP;ETIOPIA;Etíope
+FJI;FIDJI;Fijiana
+PI;FILIPINAS;Filipina
+SF;FINLANDIA;Finlandesa
+F;FRANCIA;Francesa
+GA;GABON;Gabonesa
+WAG;GAMBIA;Gambiana
+G;GEORGIA;Georgiana
+GH;GHANA;Ghanesa
+GBZ;GIBRALTAR;Gibraltareña
+WG;GRANADA;Granadina
+GR;GRECIA;Griega
+GCA;GUATEMALA;Guatemalteca
+GU;GUINEA;Guineana
+GUP;GUINEA BISSAU;Guineana
+GUE;GUINEA ECUATORIAL;Ecuatoguineana
+GUY;GUYANA;Guyanesa
+RH;HAITI;Haitiana
+HD;HONDURAS;Hondureña
+H;HUNGRIA;Húngara
+IND;INDIA;India
+RI;INDONESIA;Indonesia
+IRQ;IRAK;Iraquí
+IR;IRAN;Iraní
+IRL;IRLANDA;Irlandesa
+IS;ISLANDIA;Islandesa
+IL;ISRAEL;Israelí
+I;ITALIA;Italiana
+JA;JAMAICA;Jamaicana
+J;JAPON;Japonesa
+HKJ;JORDANIA;Jordana
+KAZ;KAZAJSTAN;Kazajstana
+EAK;KENIA;Keniata
+KIR;KIRGUIZISTAN;Kirguistana
+KI;KIRIBATI;Kiribatina
+KWT;KUWAIT;Kuwaití
+LAO;LAOS;Laosiana
+LS;LESOTHO;Lesothense
+LT;LETONIA;Letona
+RL;LIBANO;Libanesa
+LEB;LIBERIA;Liberiana
+LAR;LIBIA;Libia
+FL;LIECHTENSTEIN;Liechtensteinense
+LIT;LITUANIA;Lituana
+L;LUXEMBURGO;Luxemburguesa
+RM;MADAGASCAR;Malgache
+MAL;MALASIA;Malaya
+MW;MALAWI (NYASSALAND);Malauina
+MAD;MALDIVAS;Maldivense
+RMM;MALI;Malinesa
+M;MALTA (INCLUIDOS GOZO Y COMINO);Maltesa
+MA;MARRUECOS;Marroquí
+MS;MAURICIO;Mauriciana
+RIM;MAURITANIA;Mauritana
+MEX;MEXICO;Mejicana
+MOL;MOLDAVIA;Moldava
+MC;MONACO;Monegasca
+MG;MONGOLIA;Mongoleña
+ME;MONTENEGRO;Montenegrina
+MZ;MOZAMBIQUE;Mozambiqueña
+BUR;MYANMAR (ANTIGUA BIRMANIA);Birmana
+SWA;NAMIBIA;Namibiana
+NU;NAURU;Nauruense
+NP;NEPAL;Nepalesa
+NIC;NICARAGUA;Nicaragüense
+NIG;NIGER;Nigerina
+WAN;NIGERIA;Nigeriana
+N;NORUEGA;Noruega
+NZ;NUEVA ZELANDA;Neozelandesa
+OM;OMAN;Omaní
+NL;PAISES BAJOS;Holandesa
+PAK;PAKISTAN;Pakistaní
+PA;PANAMA;Panameña
+PN;PAPUA NUEVA GUINEA;Papú neoguineana
+PY;PARAGUAY;Paraguaya
+PE;PERU;Peruana
+PL;POLONIA;Polaca
+P;PORTUGAL;Portuguesa
+PR;PUERTO RICO;Portorriqueña
+Q;QATAR;Catarí
+GB;REINO UNIDO;Británica
+RCA;REPUBLICA CENTROAFRICANA;Centroafricana
+CHE;REPUBLICA CHECA;Checa
+DOM;REPUBLICA DOMINICANA;Dominicana
+RWA;RUANDA;Ruandesa
+R;RUMANIA;Rumana
+RUS;RUSIA;Rusa
+WS;SAMOA OCCIDENTAL;Samoana
+SCN;SAN CRISTOBAL Y NIEVES;Kitena o Sancristobaleña
+RSM;SAN MARINO;Sanmarinense
+VS;SAN VICENTE Y LAS GRANADINAS;Sanvicentina
+WL;SANTA LUCIA;Santaluciana
+ST;SANTO TOME Y PRINCIPE;Santotomense
+SN;SENEGAL;Senegalesa
+SRB;SERBIA;Serbia
+SY;SEYCHELLES Y DEPENDENCIAS;Seychellense
+WAL;SIERRA LEONA;Sierraleonesa
+SGP;SINGAPUR;Singapureña
+SYR;SIRIA;Siria
+SP;SOMALIA;Somalí
+CL;SRI LANKA;Esrilanquesa
+ZA;SUDAFRICA;Sudafricana
+SDN;SUDAN;Sudanesa
+S;SUECIA;Sueca
+CH;SUIZA;Suiza
+SME;SURINAM (GUAYANA HOLANDESA);Surinamita
+SD;SWAZILANDIA;Swazelandesa
+T;TAILANDIA;Tailandesa
+RC;TAIWAN;Taiwanesa
+TAD;TAJIKISTAN;Tayikistana
+EAZ;TANZANIA;Tanzana
+TG;TOGO;Togolesa
+TNG;TONGA;Tongana
+TT;TRINIDAD Y TOBAGO;Tobaguense
+TN;TUNEZ;Tunecina
+TUR;TURKMENISTAN;Turcomana
+TR;TURQUIA;Turca
+TVL;TUVALU;Tuvaluense
+UKR;UCRANIA;Ucraniana
+EAU;UGANDA;Ugandesa
+U;URUGUAY;Uruguaya
+UZB;UZBEKISTAN;Uzbeka
+VNT;VANUATU;Vanuatense
+YV;VENEZUELA;Venezolana
+VN;VIETNAM;Vietnamita
+YEM;YEMEN;Yemení
+ZR;ZAIRE;Zaireña
+Z;ZAMBIA;Zambiana
+RSR;ZIMBABWE;Zimbabuesa
