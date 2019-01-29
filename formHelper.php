@@ -160,11 +160,11 @@ function selectNacionalidad($etiqueta, $variable, $valor, $paises) {
     $html .= '<select class="form-control" name="' . $variable . '" id="' . $variable . '">';
 
     foreach ($paises as $key => $codigo) {
-        $html .= '<option value="' . $codigo[code] . '" ';
-        if ($valor==$codigo[code]) {
+        $html .= '<option value="' . $codigo['code'] . '" ';
+        if ($valor==$codigo['code']) {
             $html .= 'selected';
         }
-        $html .= '>' . $codigo[nacionalidad] . '</option>';
+        $html .= '>' . $codigo['nacionalidad'] . '</option>';
     }
 
     $html .= '</select></div>';
