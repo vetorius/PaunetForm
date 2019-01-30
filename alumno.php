@@ -39,7 +39,7 @@ class alumno
 
 	public $mod = '';
 	public $idi = 'IN';
-	public $opt = '';
+//	public $opt = '';
 	public $matMod = '';
 	public $esp1 = '';
 	public $esp2 = '';
@@ -97,7 +97,7 @@ class alumno
 		$this->email = $datos[22];
 		$this->mod = $datos[23];
 		$this->idi = $datos[24];
-		$this->opt = $datos[25];
+//		$this->opt = $datos[25];
 		$this->matMod = $datos[26];
 		$this->esp1 = $datos[27];
 		$this->esp2 = $datos[28];
@@ -136,15 +136,16 @@ class alumno
 						$this->email,
 						$this->mod,
 						$this->idi,
-						$this->opt,
+//						$this->opt,
 						$this->matMod,
 						$this->esp1,
 						$this->esp2,
 						$this->esp3,
 						$this->esp4);
 
+		$number = count($datos);
 		foreach ($datos as $key => $value) {
-			if ($key<30){
+			if ($key<$number-1){
 				fwrite($fichero, $value . chr(9));
 			} else {
 				fwrite($fichero, $value . chr(10));
