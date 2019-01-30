@@ -23,6 +23,7 @@
     * Genera los select con los códigos de asignaturas y paises.
     */
 
+
 function selectAsignatura($etiqueta, $variable, $valor) {
 
     $html = '<label for="' . $variable . '">' . $etiqueta . '</label>';
@@ -133,108 +134,39 @@ function selectAsignaturaFaseGeneral($etiqueta, $variable, $valor) {
     return $html;    
 }
 
-function selectPais($etiqueta, $variable, $valor) {
+function selectPais($etiqueta, $variable, $valor, $paises) {
 
     $html = '<div class="form-group">';
     $html .= '<label for="' . $variable . '">' . $etiqueta . '</label>';
     $html .= '<select class="form-control" name="' . $variable . '" id="' . $variable . '">';
+ 
+    foreach ($paises as $key => $codigo) {
+        $html .= '<option value="' . $codigo['code'] . '" ';
+        if ($valor==$codigo['code']) {
+            $html .= 'selected';
+        }
+        $html .= '>' . $codigo['pais'] . '</option>';
+    }
 
-    // pais
-        $html .= '<option value="E" ';
-        if ($valor=='E') {
-            $html .= 'selected';
-        }
-        $html .= '>España</option>';
-   // pais
-        $html .= '<option value="R" ';
-        if ($valor=='R') {
-            $html .= 'selected';
-        }
-        $html .= '>Rumanía</option>';
-   // pais
-        $html .= '<option value="PY" ';
-        if ($valor=='PY') {
-            $html .= 'selected';
-        }
-        $html .= '>Paraguay</option>';
-   // pais
-        $html .= '<option value="PE" ';
-        if ($valor=='PE') {
-            $html .= 'selected';
-        }
-        $html .= '>Perú</option>';
-   // pais
-        $html .= '<option value="RUS" ';
-        if ($valor=='RUS') {
-            $html .= 'selected';
-        }
-        $html .= '>Rusia</option>';
-   // pais
-        $html .= '<option value="NIC" ';
-        if ($valor=='NIC') {
-            $html .= 'selected';
-        }
-        $html .= '>Nicaragua</option>';
-  // pais
-        $html .= '<option value="EC" ';
-        if ($valor=='EC') {
-            $html .= 'selected';
-        }
-        $html .= '>Ecuador</option>';
-   // pais
-        $html .= '<option value="MEX" ';
-        if ($valor=='MEX') {
-            $html .= 'selected';
-        }
-        $html .= '>México</option>';
-   // pais
-        $html .= '<option value="RPC" ';
-        if ($valor=='RPC') {
-            $html .= 'selected';
-        }
-        $html .= '>China</option>';
-        
     $html .= '</select></div>';
 
     return $html;    
 }
 
-function selectNacionalidad($etiqueta, $variable, $valor) {
+function selectNacionalidad($etiqueta, $variable, $valor, $paises) {
 
     $html = '<div class="form-group">';
     $html .= '<label for="' . $variable . '">' . $etiqueta . '</label>';
     $html .= '<select class="form-control" name="' . $variable . '" id="' . $variable . '">';
 
-    // pais
-        $html .= '<option value="E" ';
-        if ($valor=='E') {
+    foreach ($paises as $key => $codigo) {
+        $html .= '<option value="' . $codigo['code'] . '" ';
+        if ($valor==$codigo['code']) {
             $html .= 'selected';
         }
-        $html .= '>Española</option>';
-    // pais
-        $html .= '<option value="EC" ';
-        if ($valor=='EC') {
-            $html .= 'selected';
-        }
-        $html .= '>Ecuatoriana</option>';
-    // pais
-        $html .= '<option value="PE" ';
-        if ($valor=='PE') {
-            $html .= 'selected';
-        }
-        $html .= '>Peruana</option>';
-    // pais
-        $html .= '<option value="NIC" ';
-        if ($valor=='NIC') {
-            $html .= 'selected';
-        }
-        $html .= '>Nicaragüense</option>';
-    // pais
-        $html .= '<option value="RO" ';
-        if ($valor=='RO') {
-            $html .= 'selected';
-        }
-        $html .= '>Rumana</option>';
+        $html .= '>' . $codigo['nacionalidad'] . '</option>';
+    }
+
     $html .= '</select></div>';
 
     return $html;    
