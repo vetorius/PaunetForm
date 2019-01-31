@@ -98,11 +98,11 @@ class alumno
 		$this->mod = $datos[23];
 		$this->idi = $datos[24];
 //		$this->opt = $datos[25];
-		$this->matMod = $datos[26];
-		$this->esp1 = $datos[27];
-		$this->esp2 = $datos[28];
-		$this->esp3 = $datos[29];
-		$this->esp4 = $datos[30];
+		$this->matMod = $datos[25];
+		$this->esp1 = $datos[26];
+		$this->esp2 = $datos[27];
+		$this->esp3 = $datos[28];
+		$this->esp4 = $datos[29];
 		
 		fclose($fichero);
 	}
