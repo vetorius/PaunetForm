@@ -254,13 +254,7 @@
 					<?php echo selectIdioma('Idioma', 'idi' , $elalumno->idi); ?>
 				</div>
 
-<!-- 				<div class="form-group col-xs-2">
-					<label for="opt">Optativa común</label>
-					<select class="form-control" name="opt" id="opt">
-					  <option value="" <?php echo ($elalumno->opt == '') ? 'selected' : ''; ?> >Historia de España</option>
-					  <option value="02" <?php echo ($elalumno->opt == '02') ? 'selected' : ''; ?> disabled>Historia de la Filosofía</option>
-					</select>
-				</div> -->
+
 				
 				<div class="form-group col-xs-5">
 					<?php echo selectAsignaturaFaseGeneral('Materia de modalidad (fase general)', 'matMod' , $elalumno->matMod); ?>
