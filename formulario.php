@@ -230,7 +230,7 @@
 						<div class="form-group col-xs-3">
 							<label for="cfnHij">Número de hijos incluidos en el carnet de familia numerosa</label>
 							<input type="text" class="form-control" id="cfnHij" name="cfnHij"
-								value="<?php echo $elalumno->cfnHij; ?>" pattern="[3-9]{1}">
+								value="<?php echo $elalumno->cfnHij; ?>" pattern="[2-9]{1}">
 						</div>
 					</div>
 				</div>
