@@ -162,26 +162,26 @@ class alumno
 		if (($fichero = fopen($nombreArchivo, 'r')) !== FALSE) {
     		while (($datos = fgetcsv($fichero, 500, ';', '"')) !== FALSE) {
 
-        		$this->dni = $datos[0];
-				$this->nom = $datos[1];
-				$this->ap1 = $datos[2];
-				$this->ap2 = $datos[3];
-				$this->fnac = $datos[4];
-				$this->sex = $datos[5];
-				$this->gru = $datos[6];
-				$this->tel = $datos[7];
-				$this->dom = $datos[8];
-				$this->loc = $datos[9];
-				$this->cp = $datos[10];
-				$this->pais = $datos[11];
-				$this->locnac = $datos[12];
-				$this->nac = $datos[13];
-				$this->email = $datos[14];
-				$this->mod = $datos[15];
+		        $this->dni = $datos[0];
+						$this->nom = $datos[1];
+						$this->ap1 = $datos[2];
+						$this->ap2 = $datos[3];
+						$this->fnac = $datos[4];
+						$this->sex = $datos[5];
+						$this->gru = $datos[6];
+						$this->tel = $datos[7];
+						$this->dom = $datos[8];
+						$this->loc = $datos[9];
+						$this->cp = $datos[10];
+						$this->pais = $datos[11];
+						$this->locnac = $datos[12];
+						$this->nac = $datos[13];
+						$this->email = $datos[14];
+						$this->mod = $datos[15];
 
-				$this->saveFile();
-				echo 'Importada fila ' . $fila . ' - alumno: ' . $datos[2] . ' ' . $datos[3] . ', ' . $datos[1] . '<br>';
-				$fila = $fila + 1;
+						$this->saveFile();
+						echo 'Importada fila ' . $fila . ' - alumno: ' . $datos[2] . ' ' . $datos[3] . ', ' . $datos[1] . '<br>';
+						$fila = $fila + 1;
         	}
     	}
     	fclose($fichero);
