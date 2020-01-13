@@ -1,4 +1,4 @@
-<?php 
+<?php
  /**
     * @package paunet-LSFGV
 	* @author  Víctor Manuel Sánchez <vetorius@gmail.com>
@@ -23,8 +23,6 @@
     */
 
 include 'alumno.php';
-
-$elalumno = new alumno('');
 
 ?>
 
@@ -57,6 +55,7 @@ $elalumno = new alumno('');
     <?php
 
         if(isset($_FILES['alumnos'])){
+            $elalumno = new alumno('');
             $file_tmp =$_FILES['alumnos']['tmp_name'];
             move_uploaded_file($file_tmp, 'alumnos.csv');
             if (file_exists('alumnos.csv')) {
@@ -78,7 +77,7 @@ $elalumno = new alumno('');
             </div>
 
         </form>
-    <?php 
+    <?php
         }
     ?>
     </div><!-- /.container -->

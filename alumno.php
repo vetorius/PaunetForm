@@ -1,14 +1,14 @@
-<?php 
+<?php
 /**
 * clase para trabajar con los datos de un alumno
 */
-class alumno 
+class alumno
 {
 	// atributos de la clase
 
 	private $centro = 'ZC18P'; // cambiar según el código del centro
 	private $tipo = '8';
-	private $curso = '2018'; // cambiar según el curso escolar
+	private $curso = '2019'; // cambiar según el curso escolar
 
 	public $existe = FALSE;
 
@@ -23,13 +23,13 @@ class alumno
 	public $dom = '';
 	public $loc = '';
 	public $cp = '';
-	
+
 	public $pais = '';
 	public $locnac = '';
 	public $nac = '';
-	
+
 	public $clase = '0';
-	
+
 	public $cfnNum = '';
 	public $cfnExp = '';
 	public $cfnCad = '';
@@ -103,14 +103,14 @@ class alumno
 		$this->esp2 = $datos[27];
 		$this->esp3 = $datos[28];
 		$this->esp4 = $datos[29];
-		
+
 		fclose($fichero);
 	}
 
 	public function saveFile(){
 
 		$fichero = fopen('data/'.$this->dni.'.txt', 'w');
-		
+
 		$datos = array(	$this->centro,
 						$this->tipo,
 						$this->curso,
