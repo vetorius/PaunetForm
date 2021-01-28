@@ -96,7 +96,7 @@ function selectAsignatura($etiqueta, $variable, $valor) {
     $html .= '>Dibujo Técnico II</option>';
 // asignatura
     $html .= '<option value="FR" ';
-    if ($valor=='19') {
+    if ($valor=='FR') {
         $html .= 'selected';
     }
     $html .= '>Francés</option>';
