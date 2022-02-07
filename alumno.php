@@ -8,7 +8,7 @@ class alumno
 
 	private $centro = 'ZC18P'; // cambiar según el código del centro
 	private $tipo = '8';
-	private $curso = '2019'; // cambiar según el curso escolar
+	private $curso = '2022'; // cambiar según el curso escolar
 
 	public $existe = FALSE;
 
