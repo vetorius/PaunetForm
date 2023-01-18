@@ -46,7 +46,9 @@ function selectAsignatura($etiqueta, $variable, $valor) {
         "09" => "Química",
         "AL" => "Alemán",
         "FR" => "Francés",
-        "IN" => "Inglés"
+        "IN" => "Inglés",
+        "07" => "Matemáticas aplicadas a las ciencias sociales II",
+        "11" => "Matemáticas II"
     ];
 
     $html = '<label for="' . $variable . '">' . $etiqueta . '</label>';
