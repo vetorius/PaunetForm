@@ -155,7 +155,7 @@ function selectIdioma($etiqueta, $variable, $valor) {
         if ($valor=='FR') {
             $html .= 'selected';
         }
-        $html .= ' disabled>Francés</option>';
+        $html .= '>Francés</option>';
     // idioma
         $html .= '<option value="AL" ';
         if ($valor=='AL') {
