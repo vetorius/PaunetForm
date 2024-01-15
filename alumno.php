@@ -8,7 +8,7 @@ class alumno
 
 	private $centro = 'ZC18P'; // cambiar según el código del centro
 	private $tipo = '8';
-	private $curso = '2023'; // cambiar según el curso escolar
+	private $curso = '2024'; // cambiar según el curso escolar
 
 	public $existe = FALSE;
 
@@ -39,7 +39,7 @@ class alumno
 
 	public $mod = '';
 	public $idi = 'IN';
-//	public $opt = '';
+	public $opt = '';
 	public $matMod = '';
 	public $esp1 = '';
 	public $esp2 = '';
@@ -97,12 +97,12 @@ class alumno
 		$this->email = $datos[22];
 		$this->mod = $datos[23];
 		$this->idi = $datos[24];
-//		$this->opt = $datos[25];
-		$this->matMod = $datos[25];
-		$this->esp1 = $datos[26];
-		$this->esp2 = $datos[27];
-		$this->esp3 = $datos[28];
-		$this->esp4 = $datos[29];
+		$this->opt = $datos[25];
+		$this->matMod = $datos[26];
+		$this->esp1 = $datos[27];
+		$this->esp2 = $datos[28];
+		$this->esp3 = $datos[29];
+		$this->esp4 = $datos[30];
 
 		fclose($fichero);
 	}
@@ -136,7 +136,7 @@ class alumno
 						$this->email,
 						$this->mod,
 						$this->idi,
-//						$this->opt,
+						$this->opt,
 						$this->matMod,
 						$this->esp1,
 						$this->esp2,

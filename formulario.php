@@ -240,7 +240,7 @@
 
 <!-- Datos de modalidad y opciones PAU -->
 			<div class="row">
-				<div class="form-group col-xs-4">
+				<div class="form-group col-xs-3">
 					<label for="mod">Modalidad de bachillerato</label>
 					<select class="form-control" name="mod" id="mod">
 					  <option value="A" <?php echo ($elalumno->mod == 'A') ? 'selected' : ''; ?> disabled >Artes</option>
@@ -250,11 +250,17 @@
 					</select>
 				</div>
 
-				<div class="form-group col-xs-3">
+				<div class="form-group col-xs-2">
 					<?php echo selectIdioma('Idioma', 'idi' , $elalumno->idi); ?>
 				</div>
 
-
+				<div class="form-group col-xs-2">
+					<label for="opt">Optativa común</label>
+					<select class="form-control" name="opt" id="opt">
+					  <option value="01" <?php echo ($elalumno->opt == '01') ? 'selected' : ''; ?> >Historia de España</option>
+					  <option value="17" <?php echo ($elalumno->opt == '17') ? 'selected' : ''; ?> >Historia de la Filosofía</option>
+					</select>
+				</div>
 				
 				<div class="form-group col-xs-5">
 					<?php echo selectAsignaturaFaseGeneral('Materia de modalidad (fase general)', 'matMod' , $elalumno->matMod); ?>
