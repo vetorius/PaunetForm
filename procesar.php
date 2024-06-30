@@ -58,7 +58,7 @@ if (isset($_POST['dni']) == FALSE) {
 	$elalumno->email = $_POST['email'];
 	$elalumno->mod = $_POST['mod'];
 	$elalumno->idi = $_POST['idi'];
-//	$elalumno->opt = $_POST['opt'];
+	$elalumno->opt = $_POST['opt'];
 	$elalumno->matMod = $_POST['matMod'];
 	$elalumno->esp1 = $_POST['esp1'];
 	$elalumno->esp2 = $_POST['esp2'];

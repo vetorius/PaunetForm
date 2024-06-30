@@ -7,8 +7,8 @@ class alumno
 	// atributos de la clase
 
 	private $centro = 'ZC18P'; // cambiar según el código del centro
-	private $tipo = '8';
-	private $curso = '2023'; // cambiar según el curso escolar
+	private $tipo = '9';
+	private $curso = '2024'; // cambiar según el curso escolar
 
 	public $existe = FALSE;
 
@@ -39,7 +39,7 @@ class alumno
 
 	public $mod = '';
 	public $idi = 'IN';
-//	public $opt = '';
+	public $opt = '';
 	public $matMod = '';
 	public $esp1 = '';
 	public $esp2 = '';
@@ -97,12 +97,12 @@ class alumno
 		$this->email = $datos[22];
 		$this->mod = $datos[23];
 		$this->idi = $datos[24];
-//		$this->opt = $datos[25];
-		$this->matMod = $datos[25];
-		$this->esp1 = $datos[26];
-		$this->esp2 = $datos[27];
-		$this->esp3 = $datos[28];
-		$this->esp4 = $datos[29];
+		$this->opt = $datos[25];
+		$this->matMod = $datos[26];
+		$this->esp1 = $datos[27];
+		$this->esp2 = $datos[28];
+		$this->esp3 = $datos[29];
+		$this->esp4 = $datos[30];
 
 		fclose($fichero);
 	}
@@ -136,7 +136,7 @@ class alumno
 						$this->email,
 						$this->mod,
 						$this->idi,
-//						$this->opt,
+						$this->opt,
 						$this->matMod,
 						$this->esp1,
 						$this->esp2,
@@ -163,25 +163,25 @@ class alumno
     		while (($datos = fgetcsv($fichero, 500, ';', '"')) !== FALSE) {
 
 		        $this->dni = $datos[0];
-						$this->nom = $datos[1];
-						$this->ap1 = $datos[2];
-						$this->ap2 = $datos[3];
-						$this->fnac = $datos[4];
-						$this->sex = $datos[5];
-						$this->gru = $datos[6];
-						$this->tel = $datos[7];
-						$this->dom = $datos[8];
-						$this->loc = $datos[9];
-						$this->cp = $datos[10];
-						$this->pais = $datos[11];
-						$this->locnac = $datos[12];
-						$this->nac = $datos[13];
-						$this->email = $datos[14];
-						$this->mod = $datos[15];
+				$this->nom = $datos[1];
+				$this->ap1 = $datos[2];
+				$this->ap2 = $datos[3];
+				$this->fnac = $datos[4];
+				$this->sex = $datos[5];
+				$this->gru = $datos[6];
+				$this->tel = $datos[7];
+				$this->dom = $datos[8];
+				$this->loc = $datos[9];
+				$this->cp = $datos[10];
+				$this->pais = $datos[11];
+				$this->locnac = $datos[12];
+				$this->nac = $datos[13];
+				$this->email = $datos[14];
+				$this->mod = $datos[15];
 
-						$this->saveFile();
-						echo 'Importada fila ' . $fila . ' - alumno: ' . $datos[2] . ' ' . $datos[3] . ', ' . $datos[1] . '<br>';
-						$fila = $fila + 1;
+				$this->saveFile();
+				echo 'Importada fila ' . $fila . ' - alumno: ' . $datos[2] . ' ' . $datos[3] . ', ' . $datos[1] . '<br>';
+				$fila = $fila + 1;
         	}
     	}
     	fclose($fichero);
